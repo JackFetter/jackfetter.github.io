@@ -1,0 +1,658 @@
+/* FILE NAME WHEN NOT IN USE: style-adaptive.css */
+/* DESCRIPTION: This theme supports both light and dark colour schemes, and is toggled at a system UI level */
+
+/* Basic CSS - H1, p, etc. */
+
+:root {
+	--dark: #1C1C1E; /* #1C1C1E */
+	--light: #FFF;
+	--nice-white: #D6D6D6;
+	--header-title: #FFF;
+	--header-text: #FFF;
+}
+
+::selection {
+	background:#121B30;
+	color:#FFF;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color: var(--light); /* #f9f9f9 */
+	margin:0;
+}
+
+h1 {	
+	font-size:1.6em;
+	color:#111;
+	font-weight:bold;
+	margin-bottom:0.4em;
+}
+
+p {
+	font-size: 1em;
+	color:#000;
+	margin-top:0;
+	margin-bottom:0.7em;
+	line-height: 1.5em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+	line-height:2em;
+}
+
+#header-bg {
+	background:url("background.jpg");
+	background-color: var(--dark);
+	background-position: center;
+	background-size: cover;
+}
+
+.header ul {
+	margin-top:1.5em;
+	line-height: 3em;
+}
+
+.header li {
+	margin-right: 0.2em;
+}
+
+.header p {
+    margin-top: 0.5em;
+	margin-bottom:0.5em;
+	color:var(--header-text);
+	font-size:18px;
+}
+
+.header h1 {
+	color:var(--header-title);
+	font-size: 50px;
+}
+
+.wrapper-index ul {
+	margin-top:1.5em;
+	line-height: 3em;
+}
+
+.wrapper-index li {
+	margin-right: 0.2em;
+}
+
+.wrapper-index p {
+    margin-top: 0.5em;
+	margin-bottom:0.5em;
+}
+
+.wrapper-pdf ul {
+	margin-top:1.5em;
+	line-height: 3em;
+}
+
+.wrapper-pdf li {
+	margin-right: 0.2em;
+}
+
+.wrapper-pdf p {
+    margin-top: 0.5em;
+	margin-bottom:0.5em;
+}
+
+.wrapper li {
+	margin-top:0.5em;
+	margin-bottom: 1em;
+}
+
+a {
+	color:#111;
+	font-weight:bold;
+	text-decoration:none;
+	margin-bottom:1em;
+}
+
+/* END Basic CSS */
+
+/* Specific CSS Class Rules (inline, index, code-block, code-indent1 through 3) */
+
+.mobile h1 {
+	display: none;
+}
+
+.code-block {
+	font-family: Menlo, monospace;
+	font-size: 0.8em;
+	color:#000;
+}
+
+.code-block p {
+	margin-bottom: 0;
+	line-height: 1.5em;
+}
+
+.code-output {
+	font-family: Menlo, monospace;
+	font-size: 0.8em;
+	color:#000;
+}
+
+.code-output p {
+	margin-bottom: 1em;
+	line-height: 1em;
+}
+
+.code-indent1 {
+	margin-left: 1em;
+	padding-left:1em;
+    border-left: 2px solid #000;
+}
+
+.code-indent2 {
+	margin-left: 4em;
+	padding-left:1em;
+    border-left: 2px solid #797979;
+}
+
+.code-indent3 {
+	margin-left: 7em;
+	padding-left:1em;
+    border-left: 2px solid #C0C0C0;
+}
+
+.decision {
+	font-size: 3em;
+	line-height: 1.15em;
+	display: inline;
+	vertical-align: middle;
+	margin: -1000000% 0;
+}
+
+.inline {
+  display: inline;
+  font-size:1em;
+  font-weight:bold;
+  letter-spacing: 0px;
+}
+
+.inline h1 {
+	font-size: 0.2em;
+}
+
+.inline h2 {
+	font-size: 0.2em;
+}
+
+.in-text-link {
+    font-weight:500;
+    color:#161616;
+}
+
+.header {
+	height:100vh;
+    padding-top:10em;
+	margin:0 auto;
+	max-width:500px;
+	-webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.header .top {
+	display: none;
+}
+
+.wrapper-index {
+	height:100vh;
+    padding-top:3em;
+	margin:0 auto;
+	max-width:500px;
+	-webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.wrapper-pdf {
+	height:100vh;
+    padding-top:3em;
+	margin:1em;
+	max-width:500px;
+	-webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.wrapper-food {
+	margin:0 auto;
+	margin-top:3em;
+	margin-bottom:5em;
+	max-width:500px;
+	-webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+}
+
+.h-index {
+    font-size:2.5em;
+    margin-left: -1px;
+    margin-bottom:0;
+}
+
+.wrapper {
+	margin:0 auto;
+	margin-top:3em;
+	max-width:500px;
+}
+
+.nav-bar-index {
+	display: none;
+}
+
+#nav-bar {
+	display: flex;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0.35em; /* Position the navbar at the top of the page */
+	left: 0.35em;
+	height:1.75em;
+	background-color: #FFF;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	flex-flow: row nowrap;
+	overflow-x: auto;
+	border-radius: 0;
+	border: #000 solid 1px;
+}
+
+#nav-bar {
+	display: flex;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0.35em; /* Position the navbar at the top of the page */
+	left: 0.35em;
+	height:1.75em;
+	background-color: #FFF;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	flex-flow: row nowrap;
+	overflow-x: auto;
+	border-radius: 0;
+	border: #000 solid 1px;
+}
+
+.top {
+	bottom:0.5em;
+	right:0.5em;
+	position:fixed;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.top:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+.top-pdf {
+	bottom:0.5em;
+	right:0.5em;
+	position:fixed;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.top-pdf:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+.download {
+	bottom:3.5em;
+	right:0.5em;
+	position:fixed;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.download:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+.button-link {
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.button-link:hover {
+	background-color: #000;
+	color:#FFF;
+}
+
+.anchor, .linkedin, .email, .clippy, .spin, #nav-bar, .top-pdf {
+ 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ }
+
+.top, .download {
+ 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.anchor:hover, .linkedin:hover, .email:hover, .clippy:hover, .top:hover, .top-pdf:hover, .spin:hover, #nav-bar:hover, .download:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.anchor {
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+	display: inline;
+	margin-right: 0.5em;
+}
+
+.anchor:hover {
+	background-color: #000;
+	border: #000 solid 1px;
+	color:#FFF;
+}
+
+.linkedin {
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+	display: inline;
+	margin-right: 0.5em;
+}
+
+.linkedin:hover {
+	background-color: #0073B0;
+	border: #0073B0 solid 1px;
+	color:#FFF;
+}
+
+.linkedin:hover .fa-linkedin {
+	color: #FFF;
+}
+
+.email {
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+	display:inline;
+}
+
+.email:hover {
+	background-color: #34495E;
+	border: #34495E solid 1px;
+	color:#FFF;
+}
+
+.email:hover .fa-at {
+	color: #FFF;
+}
+
+#nav-bar a {
+	vertical-align: middle;
+}
+
+#links {
+	max-width: 500px;
+}
+
+#nav-bar h1 {
+	vertical-align: middle;
+	margin-bottom: 1em;
+}
+
+.spin {
+	bottom:0.5em;
+	right:0.5em;
+	position:fixed;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.spin:hover {
+	color:#FFF;
+	background-color: #000;
+}
+
+.clippy {
+	bottom:0.5em; /* 0.5em was the default */
+	right:0.5em;
+	position:absolute;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.clippy:hover {
+	background-color: #000;
+	color:#FFF;
+	border: #000 solid 1px;
+}
+
+.fa {
+	font-weight: normal;
+}
+
+.fa-linkedin {
+	color: #0073B0;
+}
+
+.fa-twitter {
+	color: #38A1F3;
+}
+
+.fa-at {
+	color: #34495E;
+}
+
+.clear-block {
+	display:none;
+	background-color: white;
+}
+
+/* End Specific CSS Class Rules */
+
+/* -- Dark Mode Adjustments (That's right, I already support Dark Mode) -- */
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--dark);
+	}
+	.clear-block {
+		background-color: var(--dark);
+	}
+	#nav-bar {
+		background-color: var(--dark);
+		border: var(--nice-white) solid 1px;
+		border-radius: 0;
+	}
+	h1 {
+		color:#FFF;
+	}
+	/*.linkedin {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color: var(--light); 
+	}
+	.linkedin:hover .fa-linkedin {
+		color: #0073B0;
+	}
+	.fa-linkedin {
+		color: #FFF;
+	}
+	.email {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color:white; 
+	}
+	.email:hover .fa-at {
+		color: #0073B0;
+	}
+	.fa-at {
+		color: #FFF;
+	}*/
+	.header p {
+		color:#FFF;
+	}
+	p {
+		color:var(--nice-white);
+	}
+	.wrapper-index p {
+		color:var(--nice-white);
+	}
+	.wrapper-pdf p {
+		color:var(--nice-white);
+	}
+	.code-block {
+		color:var(--nice-white);
+	}	
+	.code-output {
+		color:var(--nice-white);
+	}
+	.code-indent1 {
+		border-left: 2px solid var(--nice-white);
+	}
+	a {
+		color:var(--light);
+	}	
+	.in-text-link {
+	    color:var(--light);
+	}
+	/*.spin {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color:white; 
+	}
+	.spin:hover {
+		border: var(--nice-white) solid 1px;
+	}
+	.top {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color:white; 
+	}
+	.top-pdf {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color:white; 
+	}
+	.anchor {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color:white; 
+	}
+	.anchor:hover {
+		border: var(--nice-white) solid 1px;
+	}
+	.clippy {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color:white; 
+	}
+	.clippy:hover {
+		border: var(--nice-white) solid 1px;
+	}*/
+}
+
+@media only screen and (min-width: 768px) {
+	.h-index {
+		margin-top:3em;
+	}
+}
+@media only screen and (max-width: 1227px) {
+	.clear-block {
+		display: flex;
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		margin:0;
+		height:3.7em;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.wrapper-index {
+		margin-top:0;
+	}
+	.wrapper-pdf {
+		margin-top:0;
+	}
+	.header {
+	    padding-top:7em;
+	}
+	.pdf {
+		margin-top: 2em;
+	}
+	.nav-bar {
+		text-align: center;
+	}
+	.spin:hover {
+		color:#FFF;
+		background-color: #000;
+	}
+	.header ul {
+		line-height: 3em;
+	}
+	.wrapper-index ul {
+		line-height: 3em;
+	}
+	.wrapper-pdf ul {
+		line-height: 3em;
+	}
+	.wrapper {
+		margin-top:0em; /* 3 */
+	}
+	h1 {
+		font-size:1.6em;
+	}
+	.h-index {
+		font-size:1.6em;
+		font-weight:bold;
+		letter-spacing: -1px;
+	}
+}

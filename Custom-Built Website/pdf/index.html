@@ -1,0 +1,220 @@
+<head>
+	<title>PDF Assistant - Jack Fetter</title>
+	<meta name="robots" content="nofollow, noimageindex, noarchive, nocache"> 
+	<link rel="canonical" href="https://jackfetter.me/">
+	<link rel="icon" href="../favicon.png">
+	<link rel="apple-touch-icon-precomposed" href="../favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link href="../fa/css/all.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body id="#">
+	<div class="wrapper-pdf" style="height:50vh;margin:0 auto;">
+		<div id="nav-bar">
+			<a><div id="links">
+	    		<a href="../"><h1 class="inline">&#x1F9D4;&#x1F3FB; Home</h1></a>
+	    		<a><h1 class="inline"> &#10132; </h1></a>
+				<a><h1 class="inline">PDF Assistant &#x1F5A8;</h1></a>
+			</div></a>
+		</div>
+		<div style="text-align: centre;"><a href="#" class="top-pdf">Back to Top&nbsp;<i class="fas fa-arrow-up"></i></a></div>
+		<!-- <div style="text-align: centre;"><a href="pdf_assistant.py" class="download">Download&nbsp;&#x1F4C1;</a></div>
+		<h1 style="letter-spacing: 0;">PDF Assistant</h1>
+		<p>
+    		PDF Assistant takes two PDF files and outputs a merged document using the PyPDF2 module for Python 3.
+    	</p>
+		<br>
+		<br>
+		<hr>
+		<br>
+    	<!--&#x1F5A8; --><h1 class="pdf">Console Output</h1><!--
+		<div class="code-output">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/_____&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;____/</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+			<p>&nbsp;.+oooo++/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDF</p>
+			<p>&nbsp;/oooooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assistant</p>
+			<p>&nbsp;-ooooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/:`</p>
+			<p>&nbsp;&nbsp;-ooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/oo+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed by</p>
+			<p>&nbsp;&nbsp;&nbsp;.o/_____/ooooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jack Fetter</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;.ooooooooooooo:</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`:+ooooooooo/</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`--:/++++:`</p>
+			<br>
+			<p>&nbsp;---</p>
+			<br>
+			<p>We've found these PDF files in /Users/personal:</p>
+			<br>
+			<p>&nbsp;&nbsp;&nbsp;[1] Mobile Dec. 25 - 24 months.pdf</p>
+			<p>&nbsp;&nbsp;&nbsp;[2] Mobile Dec. 25 - 36 months.pdf</p>
+			<br>
+			<p>Please enter the number that's next to</p>
+			<p>the 24-month SPP document you want to open: 1</p>
+			<br>
+			<p>Please enter the number that's next to</p>
+			<p>the 36-month SPP document you want to open: 2</p>
+			<br>
+			<p>What would you like the file name to be? Mobile Plans Dec. 25</p>
+			<p>
+			<br>
+			<p>&nbsp;---</p>
+			<br>
+			<p>Mobile Plans Dec. 25.pdf has been saved to /Users/personal!</p>
+		</div> -->
+		<img src="console.png" style="width:100%;" />
+		<br>
+		<br>
+		<h1 style="display:inline;"><!--&#x1F5A5; -->Source Code</h1>
+		<p style="float: right;">
+			<a href="pdf_assistant.py" class="anchor" style="margin-right: 0">&#x1F4C1;&nbsp;Download</a>
+		</p>
+		<br/>
+		<br/>
+		<div class="code-block">
+			<p>import os</p>
+			<p>import sys</p>
+
+			<br>
+			
+			<p>try:</p>
+			<div class="code-indent1">
+				<p>from PyPDF2 import PdfFileMerger</p>
+			</div>
+
+			<p>except: # if PyPDF2 is not installed...</p>
+			<div class="code-indent1">
+				<p>print("\nPlease install 'PyPDF2' using 'pip install PyPDF2'. PDF Assistant will now end.\n")</p>
+				<p>sys.exit()  # end the program.</p>
+			</div>
+			
+			<br/>
+			
+			<p>if sys.platform == "darwin": # if using a Mac...</p>
+			<div class="code-indent1">
+				<p>os.system('clear') # wipe the console.</p>
+			</div>
+			<p>elif sys.platform == "win32": # if using a 32-bit Windows PC...</p>
+			<div class="code-indent1">
+				<p>os.system('cls') # clear the command prompt.</p>
+			</div>
+			<p>elif sys.platform == "win64": # if using a 32-bit Windows PC...</p>
+			<div class="code-indent1">
+				<p>os.system('cls') # clear the command prompt.</p>
+			</div>
+			<p>elif sys.platform == "linux" or sys.platform == "linux2":</p>
+			<div class="code-indent1">
+				<p>os.system('clear') # clear the terminal.</p>
+			</div>
+			<br>
+			<p style="line-height:1em;">print("""&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;________________</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/_____&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;____/</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
+			<p style="line-height:1em;">&nbsp;.+oooo++/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDF</p>
+			<p style="line-height:1em;">&nbsp;/oooooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assistant</p>
+			<p style="line-height:1em;">&nbsp;-ooooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/:`</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;-ooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/oo+-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed by</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;.o/_____/ooooo/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jack Fetter</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;&nbsp;.ooooooooooooo:</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`:+ooooooooo/</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`--:/++++:`</p>
+			<p style="line-height:1em;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;""")</p>
+			<br>
+			<p>file_list = {} # list of all files in current directory</p>
+			<p>output_list = [] # list of files which will be merged</p>
+			<p>month  = ['24','36'] # will print term when asking for files</p>
+			<p>a = 1 # iterate file choice list</p>
+			<p>i = 0 # iterate month printing</p>
+			<br>
+			<p>for file in os.listdir("./"): # for files in our current directory...</p>
+			<div class="code-indent1">
+			    <p>if file.endswith(".pdf"): # search for PDF files...</p>
+			</div>
+			<div class="code-indent2">
+				<p>file_list[a] = file # and sort the files into an indexed dict.</p>
+				<p>a+=1 # iterate the dict index</p>
+			</div>
+			<br>
+			<p>if not file_list: # if no PDF files were found...</p>
+			<div class="code-indent1">
+				<p>print(" ---\n\nWe couldn't find any PDF files.\nPDF Helper will now end.\n")</p>
+				<p>sys.exit() # end the program.</p>
+			</div>
+			<br>
+			<p>if len(file_list) < 2:</p>
+			<div class="code-indent1">
+				<p>print(" ---\n\nThere's only one PDF file in your current directory ({}).\nWe can't help you merge two files if there's only one present.\nPDF Helper will now end.\n".format(file_list[1]))</p>
+				<p>sys.exit() # end the program.</p>
+			</div>
+			<p>else:</p>
+			<div class="code-indent1">
+				<p>pass # at least two PDF files are in the current directory</p>
+			</div>
+			<br>
+			<p>path = sys.path[0] # get current directory path</p>
+			<p>print(" ---\n\nWe've found these PDF files in {}:\n".format(path))</p>
+			<br>
+			<p>for index, file_name in file_list.items(): # get index and name of file...</p>
+			<div class="code-indent1">
+				<p>a = "[{}] {}".format(index, file_name) # gather these in a variable...</p>
+			    <p>print("  ",a) # and print them with a bit of whitespace.</p>
+			</div>
+			<br>
+			<p>while i != 2: # iterate twice</p>
+			<div class="code-indent1">
+				<p>try:</p>
+			</div>
+			<div class="code-indent2">
+				<p>choice = int(input("\nPlease enter the number that's next to\nthe {}-month SPP document you want to open: ".format(month[0])))</p>
+				<p>output_list.append(file_list[choice]) # append file choice to output list</p>
+				<p>i += 1 # iterate up</p>
+				<p>month.pop(0) # remove the current value (24)</p>
+			</div>
+			<p>except:</p>
+			<div class="code-indent1">
+				<p>print("\n ---\n\nPlease open the program again and enter a valid number.\nPDF Helper will now end.\n") # invalid input detected</p>
+			    <p>sys.exit() # end the program</p>
+			    <p>pass</p>
+			</div>
+			<br>
+			<p>file_name = input("\nWhat would you like the file name to be? ")</p>
+			<br>
+			<p>merger = PdfFileMerger(strict=False) # don't print errors</p>
+			<p>for pdf in output_list:</p>
+			<div class="code-indent1">
+				<p>merger.append(pdf) # append each file into a single single variable</p>
+			</div>
+			<p>merger.write('{}.pdf'.format(file_name)) # write to a file with the requested name</p>
+			<p>merger.close() # close the connection</p>
+			<br>
+			<p>r = input("\nWould you like to remove the source files? ").lower()</p>
+			<p>if r == "y" or r == "yes":</p>
+			<div class="code-indent1">
+				<p>os.remove(str({}).format(output_list[0]))</p>
+			    <p>os.remove(str({}).format(output_list[1])) # remove input files based on initial dict list</p>
+			</div>
+			<p>else:</p>
+			    <p>pass</p>
+			<br>
+			<p>print("\n ---\n\n{}.pdf has been saved to {}!\n".format(file_name,path))</p>
+			<p>if sys.platform == "darwin" or sys.platform == "linux" or sys.platform == "linux2": # always ensure line break before return to console for aesthetic reasons</p>
+  			<div class="code-indent1">
+  				<p>print("")</p>
+  			</div>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<Br>
+		<br>
+		</div>
+	</div></p></div></div>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			speedAsDuration: true
+		});
+	</script>
+</body>
