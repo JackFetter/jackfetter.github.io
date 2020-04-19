@@ -45,9 +45,8 @@ ul {
 }
 
 #header-bg {
-	/*background:url("background-alt.jpg");*/
-	/*background-color: var(--dark);*/
-	background-color: #20202D;
+	background:url("background-alt.jpg");
+	background-color: var(--dark);
 	background-position: center;
 	background-size: cover;
 }
