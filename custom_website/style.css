@@ -45,7 +45,7 @@ ul {
 }
 
 #header-bg {
-	background:url("background.jpg");
+	background:url("background-altjpg");
 	background-color: var(--dark);
 	background-position: center;
 	background-size: cover;
