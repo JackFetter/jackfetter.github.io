@@ -58,6 +58,7 @@
 				"Balboa &#x1F1EE;&#x1F1F9;",
 				"Don't Gnocchi It &#x1F1EE;&#x1F1F9;",
 				"Taco Bell &#x1F32E;",
+				"Oporto &#x1F414;",
 			);
 			$selection = array_rand($restaurants);
 			echo $restaurants[$selection];
