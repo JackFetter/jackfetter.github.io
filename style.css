@@ -7,8 +7,8 @@
 	--dark: #1C1C1E; /* #1C1C1E */
 	--light: #FFF;
 	--nice-white: #D6D6D6;
-	--header-title: #FFF;
-	--header-text: #FFF;
+	--header-title: #1C1C1E;
+	--header-text: #1C1C1E;
 }
 
 ::selection {
