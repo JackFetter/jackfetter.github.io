@@ -22,7 +22,7 @@ body {
 	margin:0;
 }
 
-h1 {	
+h1 {
 	font-size:1.6em;
 	color:#111;
 	font-weight:bold;
@@ -56,9 +56,9 @@ ul {
 	line-height: 3em;
 }
 
-.header li {
+/*.header li {
 	margin-right: 0.2em;
-}
+}*/
 
 .header p {
     margin-top: 0.5em;
@@ -72,7 +72,7 @@ ul {
 	font-size: 50px;
 }
 
-.wrapper-index ul {
+/*.wrapper-index ul {
 	margin-top:1.5em;
 	line-height: 3em;
 }
@@ -84,7 +84,7 @@ ul {
 .wrapper-index p {
     margin-top: 0.5em;
 	margin-bottom:0.5em;
-}
+}*/
 
 .wrapper-pdf ul {
 	margin-top:1.5em;
@@ -116,9 +116,9 @@ a {
 
 /* Specific CSS Class Rules (inline, index, code-block, code-indent1 through 3) */
 
-.mobile h1 {
+/*.mobile h1 {
 	display: none;
-}
+}*/
 
 .code-block {
 	font-family: Menlo, monospace;
@@ -206,19 +206,19 @@ a {
 	display: none;
 }
 
-.wrapper-index {
+/*.wrapper-index {
 	height:100vh;
     padding-top:3em;
 	margin:0 auto;
 	max-width:500px;
 	-webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
+      /*-webkit-user-select: none; /* Safari */
+       /*-khtml-user-select: none; /* Konqueror HTML */
+         /*-moz-user-select: none; /* Firefox */
+          /*-ms-user-select: none; /* Internet Explorer/Edge */
+              /*user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
-}
+/*}*/
 
 .wrapper-pdf {
 	height:100vh;
@@ -248,11 +248,11 @@ a {
                                     supported by Chrome and Opera */
 }
 
-.h-index {
+/*.h-index {
     font-size:2.5em;
     margin-left: -1px;
     margin-bottom:0;
-}
+}*/
 
 .wrapper {
 	margin:0 auto;
@@ -260,24 +260,9 @@ a {
 	max-width:500px;
 }
 
-.nav-bar-index {
+/*.nav-bar-index {
 	display: none;
-}
-
-#nav-bar {
-	display: flex;
-	position: fixed; /* Set the navbar to fixed position */
-	top: 0.35em; /* Position the navbar at the top of the page */
-	left: 0.35em;
-	height:1.75em;
-	background-color: #FFF;
-	margin: 0.5rem;
-	padding: 0.5rem;
-	flex-flow: row nowrap;
-	overflow-x: auto;
-	border-radius: 0;
-	border: #000 solid 1px;
-}
+}*/
 
 #nav-bar {
 	display: flex;
