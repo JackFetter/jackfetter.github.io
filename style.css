@@ -189,7 +189,7 @@ a {
 }
 
 .header {
-	height:100vh;
+	height:100%;
     padding-top:10em;
 	margin:0 auto;
 	max-width:500px;
