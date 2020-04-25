@@ -522,7 +522,7 @@ a {
 		color: #FFF;
 	}*/
 	.header p {
-		color:#FFF;
+		color:var(--header-text);
 	}
 	p {
 		color:var(--nice-white);
