@@ -488,6 +488,9 @@ a {
 	body {
 		background-color: var(--dark);
 	}
+	#header-bg {
+		background:url("resources/background-dark.jpg");
+	}
 	.clear-block {
 		background-color: var(--dark);
 	}
