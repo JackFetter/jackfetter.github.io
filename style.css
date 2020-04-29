@@ -492,12 +492,12 @@ a {
 		background: var(--dark);
 		/*background:url("resources/background-dark.jpg");*/
 	}
-	.anchor {
+	.top {
 		background-color: var(--dark);
 		color: var(--nice-white);
 		border: var(--nice-white) solid 1px;
 	}
-	.anchor:hover {
+	.top:hover {
 		background-color: var(--nice-white);
 		color: var(--dark);
 		border: var(--dark) solid 1px;
