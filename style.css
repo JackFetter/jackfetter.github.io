@@ -491,6 +491,16 @@ a {
 	#header-bg {
 		background:url("resources/background-dark.jpg");
 	}
+	.anchor {
+		background-color: var(--dark);
+		color: var(--nice-white);
+		border: var(--nice-white) solid 1px;
+	}
+	.anchor:hover {
+		background-color: var(--nice-white);
+		color: var(--dark);
+		border: var(--dark) solid 1px;
+	}
 	.clear-block {
 		background-color: var(--dark);
 	}
