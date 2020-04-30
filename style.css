@@ -329,7 +329,7 @@ a {
 		background: var(--dark);
 		/*background:url("resources/background-dark.jpg");*/
 	}
-	.header p, .header h1 {
+	.header p, .header h1, .fa-linkedin {
 		color: var(--light);
 	}
 	.top, .anchor, .linkedin {
@@ -344,6 +344,9 @@ a {
 	}
 	.clear-block {
 		background-color: var(--dark);
+	}
+	.linkedin:hover .fa-linkedin {
+		color: #0073B0;
 	}
 	#nav-bar {
 		background-color: var(--dark);
