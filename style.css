@@ -364,7 +364,7 @@ a {
 		/*background:url("resources/background-dark.jpg");*/
 	}
 	.header p, .header h1 {
-		color: var(--light;);
+		color: var(--light);
 	}
 	.top, .anchor, .linkedin {
 		background-color: var(--dark);
