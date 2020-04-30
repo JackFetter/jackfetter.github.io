@@ -65,6 +65,6 @@
 				echo $restaurants[$selection];
 			?></h1>
 		</div>
-		<a href="./" class="spin"><i class="fas fa-redo-alt"></i>&nbsp; Spin The Wheel</a>
+		<a href="./" class="top"><i class="fas fa-redo-alt"></i>&nbsp; Spin The Wheel</a>
   </div>
 </body>
