@@ -110,18 +110,28 @@ a {
     color:#161616;
 }
 
-.header, .wrapper-food {
+.header {
 	height:100%;
     padding-top:10em;
 	margin:0 auto;
 	max-width:500px;
+}
+
+.wrapper-food {
+	margin:0 auto;
+	margin-top:3em;
+	margin-bottom:5em;
+	max-width:500px;
+}
+
+.header, .wrapper-food {
 	-webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently
-                                    supported by Chrome and Opera */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome and Opera */
 }
 
 .header .top {
