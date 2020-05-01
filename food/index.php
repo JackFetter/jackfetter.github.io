@@ -6,7 +6,7 @@
 	<link rel="apple-touch-icon-precomposed" href="favicon-ios.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="../style.css" />
-	<link href="../fa/css/all.css" rel="stylesheet">
+	<link href="https://jackfetter.me/fa/css/all.css" rel="stylesheet">
 	<style type="text/css">
 		@media only screen and (max-width: 767px) {
 			br {
