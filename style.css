@@ -339,13 +339,16 @@ a {
 		background: var(--dark);
 		/*background:url("resources/background-dark.jpg");*/
 	}
-	.header p, .header h1, .fa-linkedin {
+	.header p, .header h1{
 		color: var(--light);
 	}
+	.fa-linkedin {
+		color: var(--dark);
+	}
 	.top, .anchor, .linkedin {
-		background-color: var(--dark);
-		color: var(--light);
-		border: var(--light) solid 1px;
+		background-color: var(--nice-white);
+		color: var(--dark);
+		border: var(--nice-white) solid 1px;
 	}
 	.top:hover, .anchor:hover, .linkedin:hover {
 		background-color: var(--light);
