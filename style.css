@@ -72,12 +72,12 @@ ul {
 .header p {
     margin-top: 0.5em;
 	margin-bottom:0.5em;
-	color:#FFF;
+	color:var(--light);
 	font-size:18px;
 }
 
 .header h1 {
-	color:#FFF;
+	color:var(--light);
 	font-size: 50px;
 }
 
