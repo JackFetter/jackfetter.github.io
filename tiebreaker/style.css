@@ -1,0 +1,476 @@
+/* DESCRIPTION: This theme supports both light and dark colour schemes, and is toggled at a system UI level */
+
+/* Basic CSS - H1, p, etc. */
+
+:root {
+	--dark: #1C1C1E; /* #1C1C1E */
+	--light: #FFF;
+	--nice-white: #D6D6D6;
+	--header-title: #1C1C1E;
+	--header-text: #1C1C1E;
+	--solarized-light: #FDF6E3;
+	--dark-blue: #000F3E;
+}
+
+::selection {
+	background:#121B30;
+	color:#FFF;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: var(--light); /* #f9f9f9 */
+	margin:0;
+}
+
+h1 {
+	font-size:1.6em;
+	color:#111;
+	font-weight:bold;
+	margin-bottom:0.4em;
+}
+
+p {
+	font-size: 1em;
+	color:#000;
+	margin-top:0;
+	margin-bottom:0.7em;
+	line-height: 1.5em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 0;
+	line-height:2em;
+}
+
+.container {
+	max-width: 900px;
+	column-width: 430px;
+}
+
+#card-background {
+	display: block;
+	max-width: 414px;
+	/*min-height: 414px;*/
+	margin-top: 1.5em;
+	border-radius: 20px;
+    	-webkit-box-shadow: 0px 7px 22px 1px rgba(184,184,184,0.7);
+		-moz-box-shadow: 0px 7px 22px 1px rgba(184,184,184,0.7);
+		box-shadow: 0px 7px 22px 1px rgba(184,184,184,0.7);
+	background:url("resources/mountains.jpg");
+	background-position: center bottom; /* center bottom */
+	background-size: cover;
+}
+
+.card ul {
+	margin-top:1.5em;
+	line-height: 3em;
+}
+
+.card p {
+	margin-bottom:1em;
+	color:var(--light);
+	font-size:18px;
+}
+
+.card h1 {
+	color:var(--light);
+	font-size: 50px;
+}
+
+.reload {
+	-webkit-box-shadow: 0px 7px 22px 1px rgba(184,184,184,0.7);
+	-moz-box-shadow: 0px 7px 22px 1px rgba(184,184,184,0.7);
+	box-shadow: 0px 7px 22px 1px rgba(184,184,184,0.7);
+	display: block;
+	background-image: none;
+	background-color: #D64B47;
+	min-height: 1px;
+	min-width: 1em; 
+	bottom: 1em;
+	position:fixed;
+	right:0em;
+	margin: 1rem;
+	border-radius: 5px;
+	transition: 0.1s;
+}
+
+.reload p {
+	text-align: center;
+	margin-bottom: 0;
+	color: #FFF;
+	padding:0.5em;
+}
+
+.reload i {
+	font-weight: normal;
+}
+
+.reload:hover {
+	background-color: #FFF;
+	color: #D64B47;
+}
+
+.wrapper li {
+	margin-top:0.5em;
+	margin-bottom: 1em;
+	margin-left:1em;
+	margin-right: 1em;
+}
+
+.wrapper h1 {
+	margin-left: 0.65em;
+}
+
+a {
+	color:var(--light);
+	font-weight:bold;
+	text-decoration:none;
+	margin-bottom:1em;
+}
+
+/* END Basic CSS */
+
+/* Specific CSS Class Rules (inline, index, code-block, code-indent1 through 3) */
+
+.decision {
+	font-size: 3em;
+	line-height: 1.15em;
+	display: inline;
+	vertical-align: middle;
+	margin: -1000000% 0;
+}
+
+.inline {
+  display: inline;
+  font-size:1em;
+  font-weight:bold;
+  letter-spacing: 0px;
+}
+
+.inline h1 {
+	font-size: 0.2em;
+}
+
+.inline h2 {
+	font-size: 0.2em;
+}
+
+.in-text-link {
+    font-weight:500;
+    color:var(--light);
+}
+
+.card {
+    padding-top:0.1em;
+	padding-bottom:0.3em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.wrapper-food {
+	margin:0 auto;
+	margin-top:1em;
+	margin-bottom:5em;
+	max-width:500px;
+}
+
+.card, .wrapper-food {
+	-webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none; /* Safari */
+	   -khtml-user-select: none; /* Konqueror HTML */
+		 -moz-user-select: none; /* Firefox */
+		  -ms-user-select: none; /* Internet Explorer/Edge */
+			  user-select: none; /* Non-prefixed version, currently
+									supported by Chrome and Opera */
+}
+
+.card .top {
+	display: none;
+}
+
+.wrapper {
+	margin:0 auto;
+	margin-top:3em;
+	max-width:500px;
+}
+
+#nav-bar {
+	/*display: flex;
+	position: fixed; /* Set the navbar to fixed position */
+	/*top: 0.35em; /* Position the navbar at the top of the page */
+	/*left: 0.35em;
+	height:1.75em;
+	background-color: #FFF;
+	margin: 0.5rem;
+	padding: 0.5rem;*/
+	flex-flow: row nowrap;
+	overflow-x: auto;
+	border-radius: 0;
+}
+
+.top {
+	bottom:0.5em;
+	right:0.5em;
+	position:fixed;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 20px;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.top:hover {
+	background-color: #000;
+	color: #FFF;
+}
+
+.button-link {
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.button-link:hover {
+	background-color: #000;
+	color:#FFF;
+}
+
+.anchor, .linkedin, .clippy { /* #nav-bar */
+ 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ }
+
+.top {
+ 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.anchor:hover, .linkedin:hover, .clippy:hover { /* #nav-bar:hover */
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.anchor {
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+	display: inline;
+	margin-right: 0.5em;
+}
+
+.anchor:hover {
+	background-color: #000;
+	border: #000 solid 1px;
+	color:#FFF;
+}
+
+#nav-bar a {
+	vertical-align: middle;
+}
+
+#links {
+	max-width: 500px;
+}
+
+#nav-bar h1 {
+	vertical-align: middle;
+	margin-bottom: 1em;
+}
+
+.spin {
+	bottom:0.5em;
+	right:0.5em;
+	position:fixed;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.spin:hover {
+	color:#FFF;
+	background-color: #000;
+}
+
+.clippy {
+	bottom:0.5em; /* 0.5em was the default */
+	right:0.5em;
+	position:absolute;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0;
+	background-color: #FFF;
+	color:#000;
+	border: #000 solid 1px;
+}
+
+.clippy:hover {
+	background-color: #000;
+	color:#FFF;
+	border: #000 solid 1px;
+}
+
+.fa {
+	font-weight: normal;
+	color: #000;
+}
+
+.fa-at {
+	color: #34495E;
+}
+
+.clear-block {
+	display:none;
+	background-color: white;
+}
+
+/* End Specific CSS Class Rules */
+
+/* -- Dark Mode Adjustments (That's right, I already support Dark Mode) -- */
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--dark);
+	}
+	.reload {
+
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(184,184,184,0.7);
+	-moz-box-shadow: 0px 0px 0px 0px rgba(184,184,184,0.7);
+	box-shadow: 0px 0px 0px 0px rgba(184,184,184,0.7);
+	}
+	#card-background {
+    	-webkit-box-shadow: 0px 0px 0px 0px rgba(184,184,184,0.7);
+-moz-box-shadow: 0px 0px 0px 0px rgba(184,184,184,0.7);
+box-shadow: 0px 0px 0px 0px rgba(184,184,184,0.7);
+	}
+	.clear-block {
+		background-color: var(--dark);
+	}
+	h1 {
+		color:#FFF;
+	}
+	/*.linkedin {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color: var(--light); 
+	}
+	.linkedin:hover .fa-linkedin {
+		color: #0073B0;
+	}
+	.fa-linkedin {
+		color: #FFF;
+	}
+	.email {
+		border: var(--nice-white) solid 1px;
+		background-color: var(--dark);
+		color:white; 
+	}
+	.email:hover .fa-at {
+		color: #0073B0;
+	}
+	.fa-at {
+		color: #FFF;
+	}*/
+	p {
+		color:var(--nice-white);
+	}
+	.wrapper-index p {
+		color:var(--nice-white);
+	}
+	.wrapper-pdf p {
+		color:var(--nice-white);
+	}
+	.code-block {
+		color:var(--nice-white);
+	}	
+	.code-output {
+		color:var(--nice-white);
+	}
+	.code-indent1 {
+		border-left: 2px solid var(--nice-white);
+	}
+	a {
+		color:var(--light);
+	}	
+	.in-text-link {
+	    color:var(--light);
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.h-index {
+		margin-top:3em;
+	}
+}
+@media only screen and (max-width: 1227px) {
+	.clear-block {
+		display: flex;
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		margin:0;
+		height:3.7em;
+	}
+}
+
+@media only screen and (min-width: 446px) {
+	#card-background {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 445px) {
+	#card-background {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.wrapper-index {
+		margin-top:0;
+	}
+	.wrapper-pdf {
+		margin-top:0;
+	}
+	.pdf {
+		margin-top: 2em;
+	}
+	.nav-bar {
+		text-align: center;
+	}
+	.spin:hover {
+		color:#FFF;
+		background-color: #000;
+	}
+	.card ul {
+		line-height: 3em;
+	}
+	.wrapper-index ul {
+		line-height: 3em;
+	}
+	.wrapper-pdf ul {
+		line-height: 3em;
+	}
+	.wrapper {
+		margin-top:0em; /* 3 */
+	}
+	h1 {
+		font-size:1.6em;
+	}
+	.h-index {
+		font-size:1.6em;
+		font-weight:bold;
+		letter-spacing: -1px;
+	}
+}
