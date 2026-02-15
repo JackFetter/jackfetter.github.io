@@ -2,7 +2,7 @@
   --bg:#0a0f12;
   --card:#0f1720;
   --muted:#a6b0b9;
-  --accent:#0091FF;
+  --accent:#0090FF;
   --text:#e6eef3;
   --glass: rgba(255,255,255,0.04);
   --radius:10px;
@@ -77,8 +77,8 @@ a:focus{outline:2px dashed var(--accent);outline-offset:3px}
 /* Preserve low-contrast selection look */
 ::selection{background:var(--accent);color:#022523}
 
-/*@media (prefers-color-scheme: dark) {
-    body { background-color: var(--bg); }
+@media (prefers-color-scheme: dark) {
+    /*body { background-color: var(--bg); }
     h2, h3 { color: var(--light); }
-    p { color: var(--nice-white); }
-}*/
+    p { color: var(--nice-white); }*/
+}
