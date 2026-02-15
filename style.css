@@ -1,4 +1,3 @@
-/* Variables & Reset */
 :root {
     --dark: #1C1C1E;
     --light: #FFF;
@@ -11,7 +10,6 @@
     box-sizing: border-box;
 }
 
-/* Layout Engine */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
@@ -21,23 +19,21 @@ body {
     background-color: var(--light);
 }
 
-.post-content {
+.page-content {
     width: 100%;
-    max-width: 411px; /* Matches your original .post-wrap width */
+    max-width: 411px;
     padding: 1.2em 1.5em;
     perspective: 1000px;
 }
 
-/* Typography */
 h2 { font-weight: 700; }
 h3 { font-weight: bold; font-size: 1.17rem; color: #666; }
 p { font-size: 1.2em; color: #000; line-height: 1.2em; margin-top: 10px; }
 ::selection {
-background: #121b30;
+background: #333333;
 color: #fff;
 }
 
-/* Buttons */
 .ph-button {
     display: inline-block;
     padding: 5px 15px;
@@ -60,14 +56,12 @@ color: #fff;
     color: #FFF;
 }
 
-/* Dark Mode */
 @media (prefers-color-scheme: dark) {
     body { background-color: var(--dark); }
     h2, h3 { color: var(--light); }
     p { color: var(--nice-white); }
 }
 
-/* Mobile Tweaks */
 @media (max-width: 670px) {
     body { 
         display: block; 
