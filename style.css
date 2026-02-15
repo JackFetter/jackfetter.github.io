@@ -13,7 +13,7 @@
 
 /* Layout Engine */
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
     align-items: center; /* Vertical center */
     justify-content: center; /* Horizontal center */
@@ -30,8 +30,12 @@ body {
 
 /* Typography */
 h2 { font-weight: 700; }
-h3 { font-weight: 300; font-size: 1.5rem; color: #666; }
+h3 { font-weight: bold; font-size: 1.17rem; color: #666; }
 p { font-size: 1.2em; color: #000; line-height: 1.2em; margin-top: 10px; }
+::selection {
+background: #121b30;
+color: #fff;
+}
 
 /* Buttons */
 .ph-button {
