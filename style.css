@@ -25,7 +25,6 @@ body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text); 
 .hero { padding: 6rem 0 4rem; }
 .hero h1 { font-size: 3.5rem; color: var(--primary); line-height: 1.1; font-weight:800; }
 .hero p { line-height: 1.3; font-weight:300; }
-.peopleanalytics p { color: var(--primary); font-weight:800; font-size: 1.25rem; max-width: 650px; }
 .name { color: var(--accent); }
 .lead { font-size: 1.25rem; max-width: 650px; }
 
