@@ -24,9 +24,9 @@ body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text); 
 /* Hero */
 .hero { padding: 6rem 0 4rem; }
 .hero h1 { font-size: 3.5rem; color: var(--primary); line-height: 1.1; margin-bottom: 1rem; font-weight:800; }
-.hero p { line-height: 0.7; font-weight:300; }
+.hero p { line-height: 1; font-weight:300; }
 .name { color: var(--accent); }
-.lead { font-size: 1.25rem; margin-bottom: 2rem; max-width: 650px; }
+.lead { font-size: 1.25rem; max-width: 650px; }
 
 /* Buttons */
 .button { display: inline-block; padding: 0.8rem 1.6rem; background: var(--accent); color: var(--button-text); text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.2s; border: 2px solid var(--accent); }
