@@ -11,7 +11,7 @@
 }
 
 html { scroll-behavior: smooth; }
-body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text); background: var(--light-bg); }
+body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text); background: var(--light-bg); font-weight:400; }
 .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
 
 /* Navigation */
@@ -23,7 +23,8 @@ body { font-family: 'Roboto', sans-serif; line-height: 1.6; color: var(--text); 
 
 /* Hero */
 .hero { padding: 6rem 0 4rem; }
-h1 { font-size: 3.5rem; color: var(--primary); line-height: 1.1; margin-bottom: 1rem; }
+.hero h1 { font-size: 3.5rem; color: var(--primary); line-height: 1.1; margin-bottom: 1rem; font-weight:800; }
+.hero p { line-weight: 0.9; font-weight:300; }
 .name { color: var(--accent); }
 .lead { font-size: 1.25rem; margin-bottom: 2rem; max-width: 650px; }
 
