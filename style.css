@@ -3,7 +3,7 @@
 
 :root {
     --primary: #0f172a;
-    --accent: #095ab1;
+    --accent: #095ab1; /* #2563eb */
     --text: #334155;
     --light-bg: #f8fafc;
     --border: #e2e8f0;
@@ -28,8 +28,8 @@ h1 { font-size: 3.5rem; color: var(--primary); line-height: 1.1; margin-bottom: 
 .lead { font-size: 1.25rem; margin-bottom: 2rem; max-width: 650px; }
 
 /* Buttons */
-.button { display: inline-block; padding: 0.8rem 1.6rem; background: var(--primary); color: var(--button-text); text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.2s; border: 2px solid var(--primary); }
-.button-outline { background: transparent; color: var(--primary); margin-left: 0.75rem; }
+.button { display: inline-block; padding: 0.8rem 1.6rem; background: var(--accent); color: var(--button-text); text-decoration: none; border-radius: 6px; font-weight: 600; transition: 0.2s; border: 2px solid var(--primary); }
+.button-outline { background: transparent; color: var(--accent); margin-left: 0.75rem; }
 .button:hover { transform: translateY(-2px); opacity: 0.9; }
 
 /* Content Sections */
